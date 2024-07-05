@@ -40,10 +40,9 @@
               "RelativeDocumentMoniker": "CityInfo.API\\CitiesDataStore.cs",
               "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\CitiesDataStore.cs",
               "RelativeToolTip": "CityInfo.API\\CitiesDataStore.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAWAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T17:12:16.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T17:12:16.779Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
               "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs*",
               "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-04T17:07:10.831Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "CityInfo.API\\Models\\CityDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T16:58:29.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-04T16:58:29.179Z"
             }
           ]
         }
