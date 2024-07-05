@@ -7,11 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <Compile Remove="Controllers\NewFolder\**" />
+    <Content Remove="Controllers\NewFolder\**" />
+    <EmbeddedResource Remove="Controllers\NewFolder\**" />
+    <None Remove="Controllers\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\NewFolder\" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
 </Project>
