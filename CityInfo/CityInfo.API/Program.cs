@@ -7,23 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
-});
-
-//builder.Services.AddProblemDetails(options =>
-//{
-//    options.CustomizeProblemDetails = ctx =>
-//    {
-//        ctx.ProblemDetails.Extensions.Add("additionalInfo",
-//            "Additional info example");
-//        ctx.ProblemDetails.Extensions.Add("server",
-//            Environment.MachineName);
-//    };
-//});
+}).AddXmlDataContractSerializerFormatters();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
 var app = builder.Build();
 
