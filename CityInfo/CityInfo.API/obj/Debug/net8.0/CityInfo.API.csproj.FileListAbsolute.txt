@@ -32,3 +32,7 @@ C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\obj\Debug\net8.0\CityInfo.API.genruntimeconfig.cache
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\obj\Debug\net8.0\ref\CityInfo.API.dll
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\getting-started-with-rest-slides.pdf
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
