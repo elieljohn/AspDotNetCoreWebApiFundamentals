@@ -48,5 +48,30 @@ namespace CityInfo.API.Controllers
             // returns the file's content, MIME type, and filename to the client
             return File(bytes, contentType, Path.GetFileName(pathToFile));
         }
+
+        [HttpPost]
+        public async Task<ActionResult> CreateFile(IFormFile file)
+        {
+            // Validate the input. Put a limit on filesize to avoid large uploads attacks. 
+            // Only accept .pdf files (check content-type)
+            if (file.Length == 0 || file.Length > 20971520 || file.ContentType != "application/pdf")
+            {
+                return BadRequest("No file or an invalid one has been inputted.");
+            }
+
+            // Create the file path.  Avoid using file.FileName, as an attacker can provide a
+            // malicious one, including full paths or relative paths.  
+            var path = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                $"uploaded_file_{Guid.NewGuid()}.pdf");
+
+            // initialize file stream to write the file to the specified path
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            return Ok("Your file has been uploaded successfully.");
+        }
     }
 }
