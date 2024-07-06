@@ -1,5 +1,6 @@
 ﻿using CityInfo.API.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers
@@ -105,6 +106,58 @@ namespace CityInfo.API.Controllers
             pointOfInterestFromStore.Name = pointOfInterest.Name;
             pointOfInterestFromStore.Description = pointOfInterest.Description;
 
+            return NoContent();
+        }
+
+        [HttpPatch("{pointofinterestid}")]
+        public ActionResult PartiallyUpdatePointOfInterest(
+            int cityId,
+            int pointOfInterestId,
+            JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
+        {
+            var city = CitiesDataStore.Current.Cities
+                .FirstOrDefault(c => c.Id == cityId);
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            // fetch the point of interest with the specified ID within the city
+            var pointOfInterestFromStore = city.PointsOfInterest
+                .FirstOrDefault(c => c.Id == pointOfInterestId);
+            if (pointOfInterestFromStore == null)
+            {
+                return NotFound();
+            }
+
+            // create a new DTO and populate it with the current values from the store
+            var pointOfInterestToPatch =
+                   new PointOfInterestForUpdateDto()
+                   {
+                       Name = pointOfInterestFromStore.Name,
+                       Description = pointOfInterestFromStore.Description
+                   };
+
+            // apply patch document to the DTO
+            patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
+
+            // check if model state is valid after the patch
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // perform addtional validation on the patched DTO model
+            if (!TryValidateModel(pointOfInterestToPatch))
+            {
+                return BadRequest(ModelState);
+            }
+
+            // update original point of interest with the patched values
+            pointOfInterestFromStore.Name = pointOfInterestToPatch.Name;
+            pointOfInterestFromStore.Description = pointOfInterestToPatch.Description;
+
+            // return 204 No Content to indicate the update was successful
             return NoContent();
         }
     }
