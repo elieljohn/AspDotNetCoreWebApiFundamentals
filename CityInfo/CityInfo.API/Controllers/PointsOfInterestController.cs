@@ -160,5 +160,27 @@ namespace CityInfo.API.Controllers
             // return 204 No Content to indicate the update was successful
             return NoContent();
         }
+
+        [HttpDelete("{pointOfInterestId}")]
+        public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
+        {
+            var city = CitiesDataStore.Current.Cities
+                .FirstOrDefault(c => c.Id == cityId);
+            if (city == null)
+            {
+                return NotFound();
+            }
+
+            var pointOfInterestFromStore = city.PointsOfInterest
+                .FirstOrDefault(c => c.Id == pointOfInterestId);
+            if (pointOfInterestFromStore == null)
+            {
+                return NotFound();
+            }
+
+            // delete the point of interest from the store if IDs are valid
+            city.PointsOfInterest.Remove(pointOfInterestFromStore);
+            return NoContent();
+        }
     }
 }
