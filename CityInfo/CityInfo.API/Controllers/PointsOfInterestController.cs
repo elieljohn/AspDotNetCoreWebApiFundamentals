@@ -19,7 +19,6 @@ namespace CityInfo.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<PointOfInterestDto>> GetPointsOfInterest(int cityId)
         {
-            throw new Exception("Exception sample");
             try
             {
                 var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
