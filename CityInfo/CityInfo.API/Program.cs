@@ -1,3 +1,4 @@
+using CityInfo.API;
 using CityInfo.API.Services;
 using Microsoft.AspNetCore.StaticFiles;
 using Serilog;
@@ -27,7 +28,13 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
 
-builder.Services.AddTransient<LocalMailService>();  // allows us to inject a local mail service into the controller
+#if DEBUG
+builder.Services.AddTransient<IMailService, LocalMailService>();  // allows us to inject a local mail service into the controller
+#else
+builder.Services.AddTransient<IMailService, CloudMailService>();
+#endif
+
+builder.Services.AddSingleton<CitiesDataStore>();
 
 var app = builder.Build();
 

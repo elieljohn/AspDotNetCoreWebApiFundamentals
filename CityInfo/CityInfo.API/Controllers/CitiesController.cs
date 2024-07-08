@@ -8,11 +8,18 @@ namespace CityInfo.API.Controllers
     [Route("api/cities")]
     public class CitiesController : ControllerBase
     {
+        private readonly CitiesDataStore _citiesDataStore;
+
+        public CitiesController(CitiesDataStore citiesDataStore)
+        {
+            _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
+        }
+
         [HttpGet()]
         public ActionResult<IEnumerable<CityDto>> GetCities()
         // can return a successful result containing a collection of CityDto objects or an error result
         {
-            return Ok(CitiesDataStore.Current.Cities);
+            return Ok(_citiesDataStore.Cities);
         }
 
         [HttpGet("{id}")]
@@ -20,7 +27,7 @@ namespace CityInfo.API.Controllers
         //  can return either a successful result containing a single CityDto object or an error result
         {
             // find city
-            var cityToReturn = CitiesDataStore.Current.Cities
+            var cityToReturn = _citiesDataStore.Cities
                 .FirstOrDefault(c => c.Id == id);
 
             if (cityToReturn == null)
