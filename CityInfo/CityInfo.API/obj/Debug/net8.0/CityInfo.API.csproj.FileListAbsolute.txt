@@ -46,3 +46,4 @@ C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\appsettings.Production.json
