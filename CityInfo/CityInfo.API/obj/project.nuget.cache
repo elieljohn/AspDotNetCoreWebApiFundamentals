@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "wCGflp9Ph58=",
+  "dgSpecHash": "sUesJAIJsB8=",
   "success": true,
   "projectFilePath": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\CityInfo.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ejmal\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\ejmal\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\ejmal\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ejmal\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\8.0.6\\microsoft.aspnetcore.jsonpatch.8.0.6.nupkg.sha512",
     "C:\\Users\\ejmal\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\8.0.6\\microsoft.aspnetcore.mvc.newtonsoftjson.8.0.6.nupkg.sha512",
