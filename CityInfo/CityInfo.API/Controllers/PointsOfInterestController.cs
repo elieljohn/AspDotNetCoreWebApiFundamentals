@@ -69,43 +69,34 @@ namespace CityInfo.API.Controllers
             return Ok(_mapper.Map<PointOfInterestDto>(pointOfInterest));
         }
 
-        //[HttpPost]
-        //public ActionResult<PointOfInterestDto> CreatePointOfInterest(
-        //   int cityId,
-        //   PointOfInterestForCreationDto pointOfInterest)
-        //{
-        //    // Check if the city exists
-        //    var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
-        //    if (city == null)
-        //    {
-        //        return NotFound();
-        //    }
+        [HttpPost]
+        public async Task<ActionResult<PointOfInterestDto>> CreatePointOfInterest(
+               int cityId,
+               PointOfInterestForCreationDto pointOfInterest)
+        {
+            if (!await _cityInfoRepository.CityExistsAsync(cityId))
+            {
+                return NotFound();
+            }
 
-        //    // demo purposes - to be improved
-        //    // if city exists.. then proceed creating the point of interest
-        //    var maxPointOfInterestId = _citiesDataStore.Cities.SelectMany(
-        //                     c => c.PointsOfInterest).Max(p => p.Id);
+            var finalPointOfInterest = _mapper.Map<Entities.PointOfInterest>(pointOfInterest);
 
-        //    var finalPointOfInterest = new PointOfInterestDto()
-        //    {
-        //        Id = ++maxPointOfInterestId,
-        //        Name = pointOfInterest.Name,
-        //        Description = pointOfInterest.Description
-        //    };
+            await _cityInfoRepository.AddPointOfInterestForCityAsync(
+                cityId, finalPointOfInterest);
 
-        //    city.PointsOfInterest.Add(finalPointOfInterest);
+            await _cityInfoRepository.SaveChangesAsync();
 
-        //    // generates a URL based on the "GetPointOfInterest" route and the provided cityId and pointOfInterestId values
-        //    // URL is then included in the response, along with the finalPointOfInterest data
-        //    // indicates that a new resource has been created on the server
-        //    return CreatedAtRoute("GetPointOfInterest",
-        //         new
-        //         {
-        //             cityId = cityId,
-        //             pointOfInterestId = finalPointOfInterest.Id
-        //         },
-        //         finalPointOfInterest);
-        //}
+            var createdPointOfInterestToReturn =
+                _mapper.Map<Models.PointOfInterestDto>(finalPointOfInterest);
+
+            return CreatedAtRoute("GetPointOfInterest",
+                 new
+                 {
+                     cityId = cityId,
+                     pointOfInterestId = createdPointOfInterestToReturn.Id
+                 },
+                 createdPointOfInterestToReturn);
+        }
 
         //[HttpPut("{pointofinterestid}")]
         //public ActionResult UpdatePointOfInterest(
