@@ -123,57 +123,43 @@ namespace CityInfo.API.Controllers
             return NoContent();
         }
 
-        //[HttpPatch("{pointofinterestid}")]
-        //public ActionResult PartiallyUpdatePointOfInterest(
-        //    int cityId,
-        //    int pointOfInterestId,
-        //    JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
-        //{
-        //    var city = _citiesDataStore.Cities
-        //        .FirstOrDefault(c => c.Id == cityId);
-        //    if (city == null)
-        //    {
-        //        return NotFound();
-        //    }
+        [HttpPatch("{pointofinterestid}")]
+        public async Task<ActionResult> PartiallyUpdatePointOfInterest(
+               int cityId, int pointOfInterestId,
+               JsonPatchDocument<PointOfInterestForUpdateDto> patchDocument)
+        {
+            if (!await _cityInfoRepository.CityExistsAsync(cityId))
+            {
+                return NotFound();
+            }
 
-        //    // fetch the point of interest with the specified ID within the city
-        //    var pointOfInterestFromStore = city.PointsOfInterest
-        //        .FirstOrDefault(c => c.Id == pointOfInterestId);
-        //    if (pointOfInterestFromStore == null)
-        //    {
-        //        return NotFound();
-        //    }
+            var pointOfInterestEntity = await _cityInfoRepository
+                .GetPointOfInterestForCityAsync(cityId, pointOfInterestId);
+            if (pointOfInterestEntity == null)
+            {
+                return NotFound();
+            }
 
-        //    // create a new DTO and populate it with the current values from the store
-        //    var pointOfInterestToPatch =
-        //           new PointOfInterestForUpdateDto()
-        //           {
-        //               Name = pointOfInterestFromStore.Name,
-        //               Description = pointOfInterestFromStore.Description
-        //           };
+            var pointOfInterestToPatch = _mapper.Map<PointOfInterestForUpdateDto>(
+                pointOfInterestEntity);
 
-        //    // apply patch document to the DTO
-        //    patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
+            patchDocument.ApplyTo(pointOfInterestToPatch, ModelState);
 
-        //    // check if model state is valid after the patch
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
-        //    // perform addtional validation on the patched DTO model
-        //    if (!TryValidateModel(pointOfInterestToPatch))
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
+            if (!TryValidateModel(pointOfInterestToPatch))
+            {
+                return BadRequest(ModelState);
+            }
 
-        //    // update original point of interest with the patched values
-        //    pointOfInterestFromStore.Name = pointOfInterestToPatch.Name;
-        //    pointOfInterestFromStore.Description = pointOfInterestToPatch.Description;
+            _mapper.Map(pointOfInterestToPatch, pointOfInterestEntity);
+            await _cityInfoRepository.SaveChangesAsync();
 
-        //    // return 204 No Content to indicate the update was successful
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
         //[HttpDelete("{pointOfInterestId}")]
         //public ActionResult DeletePointOfInterest(int cityId, int pointOfInterestId)
