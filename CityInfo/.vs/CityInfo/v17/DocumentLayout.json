@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\services\\icityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\icityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\services\\cityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\cityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\services\\paginationmetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\paginationmetadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\services\\cityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\cityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\services\\icityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\services\\icityinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,38 +33,50 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "CityInfo.API\\appsettings.Development.json",
+              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\appsettings.Development.json*",
+              "RelativeToolTip": "CityInfo.API\\appsettings.Development.json*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-20T10:14:39.474Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaginationMetadata.cs",
-              "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\PaginationMetadata.cs",
-              "RelativeDocumentMoniker": "CityInfo.API\\Services\\PaginationMetadata.cs",
-              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\PaginationMetadata.cs",
-              "RelativeToolTip": "CityInfo.API\\Services\\PaginationMetadata.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "CityInfo.API\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwE0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T14:27:51.621Z",
+              "WhenOpened": "2024-07-20T10:03:46.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ICityInfoRepository.cs",
               "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\ICityInfoRepository.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Services\\ICityInfoRepository.cs",
-              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\ICityInfoRepository.cs*",
-              "RelativeToolTip": "CityInfo.API\\Services\\ICityInfoRepository.cs*",
+              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\ICityInfoRepository.cs",
+              "RelativeToolTip": "CityInfo.API\\Services\\ICityInfoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T15:54:47.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T15:54:47.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CityInfoRepository.cs",
               "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Services\\CityInfoRepository.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Services\\CityInfoRepository.cs",
@@ -68,8 +84,7 @@
               "RelativeToolTip": "CityInfo.API\\Services\\CityInfoRepository.cs",
               "ViewState": "AQIAACYAAAAAAAAAAAAgwDEAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T15:48:59.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-12T15:48:59.966Z"
             },
             {
               "$type": "Document",
@@ -79,7 +94,7 @@
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
               "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
               "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCsAAAAAAAAA",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwDYAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-12T15:44:09.072Z",
               "EditorCaption": ""
