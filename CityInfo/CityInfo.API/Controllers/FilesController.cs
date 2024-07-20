@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.StaticFiles;
@@ -6,7 +7,6 @@ using Microsoft.AspNetCore.StaticFiles;
 namespace CityInfo.API.Controllers
 {
     [Route("api/files")]
-    [Authorize]
     [ApiController]
     public class FilesController : ControllerBase
     {
@@ -24,6 +24,7 @@ namespace CityInfo.API.Controllers
         }
 
         [HttpGet("{fileId}")]
+        [ApiVersion(0.1, Deprecated = true)]
         public ActionResult GetFile(string fileId)
         {
             // look up the actual file, depending on the fileId...
