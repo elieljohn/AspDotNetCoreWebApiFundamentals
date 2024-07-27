@@ -155,3 +155,4 @@ C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Http.dll
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Mvc.dll
 C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\CityInfo.API.xml
+C:\GitHub\EJ\AspDotNetCore\AspDotNetCoreWebApiFundamentals\CityInfo\CityInfo.API\bin\Debug\net8.0\Asp.Versioning.Mvc.ApiExplorer.dll
