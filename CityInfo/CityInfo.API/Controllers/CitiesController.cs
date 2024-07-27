@@ -2,10 +2,8 @@
 using AutoMapper;
 using CityInfo.API.Models;
 using CityInfo.API.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CityInfo.API.Controllers
 {
@@ -55,6 +53,9 @@ namespace CityInfo.API.Controllers
         /// <response code="200">Returns the requested city</response>
         /// <returns>A city with or without points of interest</returns>
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetCity(
             int id, bool includePointsOfInterest = false)
         {

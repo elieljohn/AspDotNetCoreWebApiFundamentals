@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\models\\citywithoutpointsofinterestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\models\\citywithoutpointsofinterestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|solutionrelative:cityinfo.api\\controllers\\citiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{436E2F93-017F-4153-B80D-56D46EF9CDFA}|CityInfo.API\\CityInfo.API.csproj|c:\\github\\ej\\aspdotnetcore\\aspdotnetcorewebapifundamentals\\cityinfo\\cityinfo.api\\controllers\\pointsofinterestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +34,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Program.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Program.cs",
-              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Program.cs*",
-              "RelativeToolTip": "CityInfo.API\\Program.cs*",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAtAAAA",
+              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Program.cs",
+              "RelativeToolTip": "CityInfo.API\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T18:51:08.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CityWithoutPointsOfInterestDto.cs",
               "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Models\\CityWithoutPointsOfInterestDto.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Models\\CityWithoutPointsOfInterestDto.cs",
@@ -55,18 +55,17 @@
               "RelativeToolTip": "CityInfo.API\\Models\\CityWithoutPointsOfInterestDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T18:55:43.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T18:55:43.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CitiesController.cs",
               "DocumentMoniker": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
               "RelativeDocumentMoniker": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs",
-              "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAowEcAAABAAAAA",
+              "ToolTip": "C:\\GitHub\\EJ\\AspDotNetCore\\AspDotNetCoreWebApiFundamentals\\CityInfo\\CityInfo.API\\Controllers\\CitiesController.cs*",
+              "RelativeToolTip": "CityInfo.API\\Controllers\\CitiesController.cs*",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwEEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-26T18:54:46.633Z",
               "EditorCaption": ""
@@ -81,8 +80,7 @@
               "RelativeToolTip": "CityInfo.API\\Controllers\\PointsOfInterestController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-26T18:52:58.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-26T18:52:58.941Z"
             }
           ]
         }
